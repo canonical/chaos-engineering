@@ -5,9 +5,9 @@
 ````{grid} 1 1 2 2
 
 ```{grid-item-card}
-:link: tutorials/
+:link: tutorial/
 
-Tutorials
+Tutorial
 ^^^
 
 **Start here**: a hands-on introduction to Charmed Chaos Engineering platform for new users
@@ -58,7 +58,7 @@ Charmed Chaos Engineering platform is a member of the Ubuntu family. It’s an o
 ```{toctree}
 :hidden:
 
-tutorials/index
+tutorial/index
 how-to/index
 reference/index
 explanation/index

@@ -1,8 +1,5 @@
 APIs
-TLS
 ChaosCenter
 Juju
-Terraform
 frictionless
 lifecycle
-snapd
