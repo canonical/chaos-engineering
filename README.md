@@ -1,41 +1,32 @@
-# Canonical's Sphinx Starter Pack
+# Charmed Chaos Engineering Platform
 
-*A pre-configured repository to build and publish documentation with Sphinx.*
+This repository contains documentation for the Charmed Chaos Engineering Platform.
 
-## Description
+The documentation in its official form is available at https://canonical-chaos-engineering.readthedocs-hosted.com/en/latest/.
 
-The Documentation starter pack includes:
+## What is Chaos Engineering?
 
-* A bundled [Sphinx] theme, configuration, and extensions
-* Support for both reStructuredText (reST) and MyST Markdown
-* Build checks for links, spelling, and inclusive language
-* Customisation support layered over a core configuration
+According to the definition from [Wikipedia], Chaos engineering is the discipline of experimenting on a system 
+in order to build confidence in the system's capability to withstand turbulent conditions in production.<br>
+It is achieved by the intentional and controlled causing of failures in the system to understand their impact 
+and find potential failure points. By doing so, engineers can proactively prevent outages and other disruptions.
 
-See the full documentation: https://canonical-starter-pack.readthedocs-hosted.com/
-
-## Structure
-
-This section outlines the structure of this repository, and some key files.
-
-### `docs/`
-
-This directory contains the documentation for the starter pack itself.
-
-To view it in your browser, navigate to this directory and type `make run`.
-
-### `.github/workflows/`
-
-This directory contains files used for documentation build checks via GitHub's CI.
-
-The file `test-starter-pack.yml` tests the functionality of the starter pack project.
+Charmed Chaos Engineering Platform is an opinionated set of tools facilitating environment for conducting, observing
+and analyzing output of Chaos engineering tests. The solution leverages [Juju] and a set of [Charmed Operators] 
+to provide the end user with a smooth and frictionless experience of deploying and managing the solution throughout 
+its entire lifecycle. 
 
 ## Contributing
 
-We welcome contributions to this project! If you have suggestions, bug fixes, or improvements, please open an issue or submit a pull request.
+You see room for improvement and would like to contribute to this documentation? You're more than welcome to do so!
 
-Please read and sign our [Contributor Licence Agreement (CLA)] before submitting any changes. The agreement grants Canonical permission to use your contributions. The author of a change remains the copyright owner of their code (no copyright assignment occurs).
+Before contributing please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-<!--Links-->
+## Reporting an issue
 
-[Sphinx]: https://www.sphinx-doc.org/
-[Contributor Licence Agreement (CLA)]: https://ubuntu.com/legal/contributors
+Noticed a problem with our documentation? Tell us about it by [opening a bug].
+
+[Wikipedia]: https://en.wikipedia.org/wiki/Chaos_engineering
+[Juju]: https://juju.is/
+[Charmed Operators]: https://juju.is/why-juju
+[opening a bug]: https://github.com/canonical/chaos-engineering/issues
