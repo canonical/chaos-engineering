@@ -16,6 +16,7 @@ From your terminal, install Canonical K8s and bootstrap it:
 sudo snap install k8s --classic --channel=1.33-classic/stable
 cat << EOF | sudo k8s bootstrap --file -
 containerd-base-dir: /opt/containerd
+disable-rbac: true
 cluster-config:
   network:
     enabled: true
