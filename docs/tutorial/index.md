@@ -18,3 +18,9 @@ problems, please get in touch, as we want to help you complete the tutorials and
 have a frictionless experience with Charmed Chaos Engineering.
 
 ## Table of content
+
+```{toctree}
+:maxdepth: 1
+
+getting_started
+```
