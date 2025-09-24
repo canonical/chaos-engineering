@@ -12,7 +12,7 @@ To complete this tutorial, you will need a machine which meets the following req
 
 From your terminal, install Canonical K8s and bootstrap it:
 
-```console
+```shell
 sudo snap install k8s --classic --channel=1.33-classic/stable
 cat << EOF | sudo k8s bootstrap --file -
 containerd-base-dir: /opt/containerd
@@ -31,13 +31,13 @@ EOF
 
 From your terminal, install Juju.
 
-```console
+```shell
 sudo snap install juju --channel=3.6/stable
 ```
 
 Save the K8s credentials to allow bootstrapping Juju controller.
 
-```console
+```shell
 mkdir -p ~/.kube
 sudo k8s config > ~/.kube/config
 mkdir -p ~/.local/share/juju/
@@ -46,22 +46,15 @@ sudo k8s config > ~/.local/share/juju/credentials.yaml
 
 Bootstrap a Juju controller
 
-```console
+```shell
 juju bootstrap k8s
-```
-
-```{note}
-There is a [bug](https://bugs.launchpad.net/juju/+bug/1988355) in Juju that occurs when
-bootstrapping a controller on a new machine. If you encounter it, create the following
-directory:
-`mkdir -p ~/.local/share`
 ```
 
 ## 3. Install Terraform
 
 From your terminal, install Terraform.
 
-```console
+```shell
 sudo snap install terraform --classic
 ```
 
@@ -69,13 +62,13 @@ sudo snap install terraform --classic
 
 On the host machine create a new directory called `terraform`:
 
-```console
+```shell
 mkdir terraform
 ```
 
 Inside newly created `terraform` directory create a `versions.tf` file:
 
-```console
+```shell
 cd terraform
 cat << EOF > versions.tf
 terraform {
@@ -91,7 +84,7 @@ EOF
 
 Create a Terraform module for Charmed Chaos Engineering platform:
 
-```console
+```shell
 cat << EOF > main.tf
 resource "juju_model" "charmed-chaos" {
   name = "charmed-chaos"
@@ -113,13 +106,13 @@ All necessary files are in the `examples/terraform/getting_started` directory.
 
 Initialize Juju Terraform provider:
 
-```console
+```shell
 terraform init
 ```
 
 Deploy Charmed Chaos Engineering platform by applying your Terraform configuration:
 
-```console
+```shell
 terraform apply -auto-approve
 ```
 
@@ -200,7 +193,7 @@ You have reached the end of this tutorial. For more information about Charmed Ch
 
 Destroy Terraform deployment:
 
-```console
+```shell
 terraform destroy -auto-approve
 ```
 
@@ -210,7 +203,7 @@ Terraform does not remove anything from the working directory. If needed, please
 
 Destroy the Juju controller and all its models:
 
-```console
+```shell
 juju kill-controller k8s
 ```
 
