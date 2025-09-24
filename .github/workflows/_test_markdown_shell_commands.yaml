@@ -20,4 +20,4 @@ jobs:
               sudo snap install astral-uv --classic
           - name: Run tests
             run: |
-              python3 ./scripts/test_markdown_shell_blocks.py ${{ inputs/markdown-file-path }}
+              python3 ./scripts/test_markdown_shell_blocks.py ${{ inputs.markdown-file-path }}
