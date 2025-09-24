@@ -116,6 +116,13 @@ Deploy Charmed Chaos Engineering platform by applying your Terraform configurati
 terraform apply -auto-approve
 ```
 
+<!--
+This hidden block is here for documentation testing purposes and will not be rendered in the official documentation.
+```shell
+uv run --with jubilant python -c "import jubilant as j; j.Juju(model='charmed-chaos').wait(j.all_active, timeout=600)"
+```
+-->
+
 The deployment process should take approximately 5-10 minutes.
 
 Monitor the status of the deployment:
