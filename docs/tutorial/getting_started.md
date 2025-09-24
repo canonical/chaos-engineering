@@ -204,7 +204,7 @@ Terraform does not remove anything from the working directory. If needed, please
 Destroy the Juju controller and all its models:
 
 ```shell
-juju kill-controller k8s
+juju kill-controller k8s --no-prompt
 ```
 
 [snapd]: https://snapcraft.io/docs
