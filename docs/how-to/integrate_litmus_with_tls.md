@@ -1,6 +1,6 @@
 # Integrate Litmus with TLS
 
-This how-to guide outlines the process of integrating Charmed Litmus with TLS in order to ensure encrypted communication across both internal service interactions and external client connections.
+This how-to guide outlines the process of integrating Charmed Litmus with TLS in order to ensure encrypted communication across both internal service interactions and external client connections.<br>
 TLS integration can be done as both Day 1 and Day 2 operation.
 
 In this how-to we will use [self-signed-certificates charm] to provide necessary TLS certificates.
@@ -13,7 +13,7 @@ Using self-signed TLS certificates is discouraged for the production environment
 
 Update your solution Terraform module (here it's named `main.tf`):
 
-```console
+```shell
 cat << EOF > main.tf
 module "self-signed-certificates" {
   source   = "git::https://github.com/canonical/self-signed-certificates-operator//terraform"
@@ -74,13 +74,13 @@ If you use different name, please make sure to update the code above.
 
 Fetch `self-signed-certificates` module:
 
-```console
+```shell
 terraform init
 ```
 
 Apply new configuration:
 
-```console
+```shell
 terraform apply -auto-approve
 ```
 
