@@ -1,0 +1,23 @@
+name: Markdown shell commands test
+
+on:
+  workflow_call:
+    inputs:
+      markdown-file-path:
+        description: "Path to the Markdown file which should be tested. Path should be relative to the repository root."
+        required: true
+        type: string
+
+jobs:
+    tf-tests:
+        runs-on: ubuntu-latest
+        name: Documentation commands test
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4
+          - name: Install dependencies
+            run: |
+              sudo snap install astral-uv --classic
+          - name: Run tests
+            run: |
+              python3 ./scripts/test_markdown_shell_blocks.py ${{ inputs/markdown-file-path }}
