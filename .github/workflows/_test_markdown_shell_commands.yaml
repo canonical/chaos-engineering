@@ -22,4 +22,4 @@ jobs:
           - name: Run tests
             run: |
               curl https://api.charmhub.io/v2/charms/refresh || true
-              python3 ./scripts/test_markdown_shell_blocks.py ${{ inputs/markdown-file-path }}
+              python3 ./scripts/test_markdown_shell_blocks.py ${{ inputs.markdown-file-path }}
