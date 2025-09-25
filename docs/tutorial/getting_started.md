@@ -8,9 +8,13 @@ To complete this tutorial, you will need a machine which meets the following req
 - 50GB of free disk space
 - An Ubuntu (or another operating system which supports [snapd]) environment to run the commands
 
+```{note}
+All the code blocks in this tutorial should be executed from a Linux shell.
+```
+
 ## 1. Install Canonical K8s
 
-From your terminal, install Canonical K8s and bootstrap it:
+Install Canonical K8s and bootstrap it:
 
 ```shell
 sudo snap install k8s --classic --channel=1.33-classic/stable
@@ -29,7 +33,7 @@ EOF
 
 ## 2. Bootstrap a Juju controller
 
-From your terminal, install Juju.
+Install Juju:
 
 ```shell
 sudo snap install juju --channel=3.6/stable
@@ -52,7 +56,7 @@ juju bootstrap k8s
 
 ## 3. Install Terraform
 
-From your terminal, install Terraform.
+Install Terraform:
 
 ```shell
 sudo snap install terraform --classic
