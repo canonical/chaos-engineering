@@ -1,6 +1,6 @@
 # Getting started
 
-In this tutorial, we will deploy and run Charmed Chaos Engineering platform using Juju and Terraform.
+In this tutorial, we will deploy and run the Charmed Chaos Engineering platform using Juju and Terraform.
 
 To complete this tutorial, you will need a machine which meets the following requirements:
 
