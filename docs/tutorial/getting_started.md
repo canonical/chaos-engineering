@@ -35,7 +35,7 @@ From your terminal, install Juju.
 sudo snap install juju --channel=3.6/stable
 ```
 
-Save the K8s credentials to allow bootstrapping Juju controller.
+Save the K8s credentials, we will need them later to bootstrap the Juju controller.
 
 ```shell
 mkdir -p ~/.kube
