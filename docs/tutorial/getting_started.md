@@ -58,7 +58,7 @@ From your terminal, install Terraform.
 sudo snap install terraform --classic
 ```
 
-## 4. Deploy Charmed Chaos Engineering platform
+## 4. Deploy the Charmed Chaos Engineering platform
 
 On the host machine create a new directory called `terraform`:
 
