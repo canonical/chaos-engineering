@@ -82,7 +82,7 @@ terraform {
 EOF
 ```
 
-Create a Terraform module for Charmed Chaos Engineering platform:
+Create a new Terraform module:
 
 ```shell
 cat << EOF > main.tf
