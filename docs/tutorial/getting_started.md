@@ -186,7 +186,7 @@ Litmus stores passwords in the database. This means that once you changed your `
 to the default one unless you re-deploy the database. Redeploying Litmus alone will not affect your passwords.
 ```
 
-After successful login you should see Litmus admin panel:
+After you successfully logged in, you should see the Litmus admin panel:
 
 ```{image} ../images/litmus_admin_panel.png
 :alt: Litmus admin panel
