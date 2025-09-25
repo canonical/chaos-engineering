@@ -104,7 +104,7 @@ You can get a ready example by cloning [this Git repository](https://github.com/
 All necessary files are in the `examples/terraform/getting_started` directory.
 ```
 
-Initialize Juju Terraform provider:
+Initialize the Juju Terraform provider:
 
 ```shell
 terraform init
