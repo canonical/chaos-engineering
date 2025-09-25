@@ -194,7 +194,7 @@ After successful login you should see Litmus admin panel:
 ```
 
 Congratulations!<br>
-You have reached the end of this tutorial. For more information about Charmed Chaos Engineering platform please see our other documents.
+You have reached the end of this tutorial. For more information about the Charmed Chaos Engineering platform please see our other documents.
 
 ## 6. Destroy the environment
 
