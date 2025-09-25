@@ -10,7 +10,7 @@ on:
 
 jobs:
     tf-tests:
-        runs-on: [self-hosted-linux-amd64-jammy-private-endpoint-medium]
+        runs-on: [self-hosted, linux, X64, medium, jammy]
         name: Documentation commands test
         steps:
           - name: Checkout
