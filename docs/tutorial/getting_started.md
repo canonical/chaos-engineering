@@ -114,6 +114,10 @@ Initialize the Juju Terraform provider:
 terraform init
 ```
 
+```shell
+curl https://api.charmhub.io/v2/charms/refresh
+```
+
 Apply your Terraform configuration:
 
 ```shell
