@@ -182,7 +182,7 @@ Use default credentials (username `admin`, password `litmus`) to log in to the L
 At first login you will be prompted to change the default password. Make sure to store it in a safe place.
 
 ```{note}
-Litmus stores passwords in the database. This means that once you changed your `admin` password, it will not be reset 
+Litmus stores all user credentials in the database. This means that once you changed your `admin` password, it will not be reset 
 to the default one unless you re-deploy the database. Redeploying Litmus alone will not affect your passwords.
 ```
 
