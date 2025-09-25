@@ -110,7 +110,7 @@ Initialize Juju Terraform provider:
 terraform init
 ```
 
-Deploy Charmed Chaos Engineering platform by applying your Terraform configuration:
+Apply your Terraform configuration:
 
 ```shell
 terraform apply -auto-approve
