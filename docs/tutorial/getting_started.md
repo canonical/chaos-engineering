@@ -173,7 +173,7 @@ mongodb-k8s:upgrade-version-a  mongodb-k8s:upgrade-version-a        upgrade     
 
 ## 5. Log in to the Litmus ChaosCenter
 
-Retrieve the `chaoscenter/0` unit IP address from the `juju status` output. In the example above, this is `10.1.194.255`; yours will likely differ.
+Retrieve the `litmus-chaoscenter/0` unit IP address from the `juju status` output. In the example above, this is `10.1.194.255`; yours will likely differ.
 
 In your browser navigate to `http://{CHAOSCENTER_IP}:8185`. You should see the Litmus login page:
 
