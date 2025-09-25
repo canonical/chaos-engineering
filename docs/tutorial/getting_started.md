@@ -198,7 +198,7 @@ You have reached the end of this tutorial. For more information about Charmed Ch
 
 ## 6. Destroy the environment
 
-Destroy Terraform deployment:
+Destroy the Terraform deployment:
 
 ```shell
 terraform destroy -auto-approve
