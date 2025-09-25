@@ -10,7 +10,7 @@ on:
 
 jobs:
     tf-tests:
-        runs-on: ubuntu-latest
+        runs-on: [self-hosted-linux-amd64-jammy-private-endpoint-medium]
         name: Documentation commands test
         steps:
           - name: Checkout
@@ -18,6 +18,8 @@ jobs:
           - name: Install dependencies
             run: |
               sudo snap install astral-uv --classic
+              curl https://api.charmhub.io/v2/charms/refresh || true
           - name: Run tests
             run: |
+              curl https://api.charmhub.io/v2/charms/refresh || true
               python3 ./scripts/test_markdown_shell_blocks.py ${{ inputs/markdown-file-path }}
