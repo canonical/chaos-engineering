@@ -18,6 +18,8 @@ jobs:
           - name: Install dependencies
             run: |
               sudo snap install astral-uv --classic
+          - name: Setup tmate session
+            uses: mxschmitt/action-tmate@v3
           - name: Run tests
             run: |
               python3 ./scripts/test_markdown_shell_blocks.py ${{ inputs.markdown-file-path }}
