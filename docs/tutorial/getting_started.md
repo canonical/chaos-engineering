@@ -66,7 +66,7 @@ On the host machine create a new directory called `terraform`:
 mkdir terraform
 ```
 
-Inside newly created `terraform` directory create a `versions.tf` file:
+Inside the newly created `terraform` directory create a `versions.tf` file:
 
 ```shell
 cd terraform
