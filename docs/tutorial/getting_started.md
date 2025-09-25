@@ -178,7 +178,7 @@ In your browser navigate to `http://{CHAOSCENTER_IP}:8185`. You should see Litmu
 :align: center
 ```
 
-Use default credentials (username `admin`, password `litmus`) to log in to the Litmus ChaosCenter for the first time. 
+Use the default credentials (username `admin`, password `litmus`) to log in to the Litmus ChaosCenter for the first time. 
 The first time you log in you will be prompted to change the default password. Make sure to store it in a safe place.
 
 ```{note}
