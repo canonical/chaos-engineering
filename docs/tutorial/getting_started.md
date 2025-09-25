@@ -179,7 +179,7 @@ In your browser navigate to `http://{CHAOSCENTER_IP}:8185`. You should see Litmu
 ```
 
 Use default credentials (username `admin`, password `litmus`) to log in to the Litmus ChaosCenter for the first time. 
-At first login you will be prompted to change the default password. Make sure to store it in a safe place.
+The first time you log in you will be prompted to change the default password. Make sure to store it in a safe place.
 
 ```{note}
 Litmus stores all user credentials in the database. This means that once you changed your `admin` password, it will not be reset 
