@@ -2,7 +2,10 @@ APIs
 TLS
 ChaosCenter
 Juju
+Kubernetes
+LoadBalancer
 Terraform
+Traefik
 frictionless
 lifecycle
 snapd
