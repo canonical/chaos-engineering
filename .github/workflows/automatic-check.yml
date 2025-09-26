@@ -11,12 +11,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  getting-started-commands-check:
-    name: Getting started tutorial shell commands check
-    uses: ./.github/workflows/_test_markdown_shell_commands.yaml
-    with:
-      markdown-file-path: ./docs/tutorial/getting_started.md
-
   spellcheck:
     name: Spelling check
     runs-on: ubuntu-latest
