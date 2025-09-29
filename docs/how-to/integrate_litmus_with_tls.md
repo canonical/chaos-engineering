@@ -6,14 +6,14 @@ TLS integration can be done as both Day 1 and Day 2 operation.
 In this how-to we will use the [self-signed-certificates charm] to provide the necessary TLS certificates.
 
 ```{note}
-Using self-signed TLS certificates is discouraged for the production environments.
+Using self-signed TLS certificates is discouraged for production environments.
 ```
 
 ## 1. Add self-signed-certificates to your Charmed Chaos Engineering platform Terraform module
 
 ```{note}
 In this guide it is assumed that the Terraform module responsible for deploying the Charmed Litmus is named `charmed-litmus`.
-If you use different name, please make sure to update the code below.
+If you use a different name, make sure to update the code below.
 ```
 
 Update your solution Terraform module (in this example named `main.tf`):
