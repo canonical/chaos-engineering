@@ -16,7 +16,7 @@ In this guide it is assumed that the Terraform module responsible for deploying 
 If you use different name, please make sure to update the code below.
 ```
 
-Update your solution Terraform module (here it's named `main.tf`):
+Update your solution Terraform module (in this example named `main.tf`):
 
 ```shell
 cat << EOF >> main.tf
