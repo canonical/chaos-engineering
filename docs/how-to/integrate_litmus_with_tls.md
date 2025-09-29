@@ -93,7 +93,7 @@ litmus-chaoscenter/0*  active    idle   10.1.194.255         Ready at https://li
 (...)
 ```
 
-## 3. Example of a complete solution Terraform module including Charmed Litmus integrated with TLS
+## 3. Example of a complete Terraform module including Charmed Litmus plus TLS integration
 
 ```console
 resource "juju_model" "charmed-chaos" {
