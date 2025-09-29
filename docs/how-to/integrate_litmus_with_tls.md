@@ -84,7 +84,7 @@ Apply the new configuration:
 terraform apply -auto-approve
 ```
 
-Successful integration is indicated by the change of the `ChaosCenter` URL printed in `juju status` output. Example:
+When the TLS integration is successfully completed, you will notice a change in the `ChaosCenter` URL printed in the `juju status` output. Namely, it will now indicate an `https` scheme. For example:
 
 ```console
 Unit                   Workload  Agent  Address       Ports  Message
