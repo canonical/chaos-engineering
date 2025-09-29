@@ -9,6 +9,11 @@ To complete this guide, your Kubernetes cluster will need a LoadBalancer with at
 
 ## 1. Add Traefik to your Charmed Chaos Engineering platform Terraform module
 
+```{note}
+In this guide it is assumed that the Terraform module responsible for deploying the Charmed Litmus is named `charmed-litmus`.
+If you use different name, please make sure to update the code below.
+```
+
 Update your solution Terraform module (here it's named `main.tf`):
 
 ```shell
@@ -34,11 +39,6 @@ resource "juju_integration" "litmus-chaoscenter-traefik" {
 }
 
 EOF
-```
-
-```{note}
-In this guide it is assumed that the Terraform module responsible for deploying the Charmed Chaos Engineering platform is named `charmed-chaos`.
-If you use different name, please make sure to update the code above.
 ```
 
 ## 2. Apply the changes
