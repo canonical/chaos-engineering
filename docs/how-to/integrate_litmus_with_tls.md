@@ -78,7 +78,7 @@ Fetch the `self-signed-certificates` module:
 terraform init
 ```
 
-Apply new configuration:
+Apply the new configuration:
 
 ```shell
 terraform apply -auto-approve
