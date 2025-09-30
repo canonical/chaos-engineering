@@ -1,7 +1,7 @@
 # Integrate Charmed Litmus with TLS
 
 This how-to guide outlines the process of integrating Charmed Litmus with TLS in order to ensure encrypted communication across both internal service interactions and external client connections.<br>
-TLS integration can be done as both Day 1 and Day 2 operation.
+TLS integration can be done as either Day 1 or Day 2 operation.
 
 In this how-to we will use the [self-signed-certificates charm] to provide the necessary TLS certificates.
 
