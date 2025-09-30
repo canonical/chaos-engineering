@@ -6,8 +6,7 @@ TLS integration can be done as both Day 1 and Day 2 operation.
 In this how-to we will use the [self-signed-certificates charm] to provide the necessary TLS certificates.
 
 ```{note}
-Using self-signed TLS certificates is discouraged for production environments.
-For production deployments, it is strongly recommended to use certificates signed by a trusted CA and safely stored, for example using the [Vault](https://charmhub.io/vault). 
+For production deployments, we strongly discourage using self-signed TLS certificates. Instead, we recommend to use certificates signed by a trusted CA and safely stored, for example using a [Vault charm](https://charmhub.io/vault). 
 ```
 
 ## 1. Add self-signed-certificates to your Charmed Chaos Engineering platform Terraform module
