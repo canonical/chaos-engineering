@@ -197,6 +197,11 @@ After you successfully logged in, you should see the Litmus admin panel:
 :align: center
 ```
 
+```{note}
+Due to a bug in Litmus (https://github.com/litmuschaos/litmus/issues/5224) it is strongly recommended to log out
+immediately after the first login and log in again.
+```
+
 Congratulations!<br>
 You have reached the end of this tutorial. For more information about the Charmed Chaos Engineering platform please see our other documents.
 

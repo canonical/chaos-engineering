@@ -11,6 +11,7 @@ Day-1 operations cover the deployment and integration of Charmed Chaos Engineeri
 
 integrate_litmus_with_tls
 enable_ingress_for_litmus
+run_chaos_experiments
 ```
 
 ## Day-2 operations
