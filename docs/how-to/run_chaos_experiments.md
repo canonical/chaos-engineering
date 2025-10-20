@@ -74,7 +74,7 @@ Last, follow the instructions from points 2 and 3 of the `Kubernetes Setup Instr
 
 After applying the manifests click the `Done` button.
 
-Deploying Chaos Infrastructure should take approximately 3-5 minutes. Successful deployment will be indicated
+Deploying Chaos Infrastructure should take approximately 3-5 minutes. A successful deployment will be indicated
 by the Infrastructure status turned into `CONNECTED`:
 
 ```{image} ../images/bootstrap_infra_success.png
