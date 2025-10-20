@@ -59,7 +59,7 @@ First, provide a name for the infrastructure. In this guide we will use `self-si
 Next, choose the Infrastructure type, specify the Kubernetes namespace to deploy the Infrastructure to and define
 a Service Account responsible for managing the Infrastructure.
 
-In this guide we will deploy the namespace-specific Chaos Infrastructure along the SUT (note the `Installation
+In this guide we will deploy the namespace-specific Chaos Infrastructure alongside the SUT (note the `Installation
 Location` being the same as the name of the Juju model we deployed `self-signed-certificates` to):
 
 ```{image} ../images/bootstrap_infra_step_2.png
