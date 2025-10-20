@@ -101,7 +101,7 @@ A correctly configured probe should look like so:
 :align: center
 ```
 
-## 3. Create a Chaos Experiment
+## 4. Create a Chaos Experiment
 
 In the Litmus Portal navigate to the `Chaos Experiments` menu and click the `+ New Experiment` button.
 
@@ -140,7 +140,7 @@ At this point you experiment should look like this:
 
 Save your changes by clicking the `Save` button in the top-right corner of the screen.
 
-## 3. Run a Chaos Experiment
+## 5. Run a Chaos Experiment
 
 Click the `Run` button in the top-right corner of the screen to run the Chaos Experiment:
 
@@ -155,6 +155,14 @@ When the experiment state changes from `RUNNING` to `COMPLETED` the run is done 
 ```{image} ../images/experiment_success.png
 :align: center
 ```
+
+### Further reading
+
+- [Litmus experiments](https://litmuschaos.github.io/litmus/experiments/categories/contents/)
+- [Construct Chaos experiment YAML without ChaosCenter](https://docs.litmuschaos.io/docs/user-guides/construct-experiment)
+- [Schedule a Chaos experiment](https://docs.litmuschaos.io/docs/user-guides/schedule-experiment)
+- [Save Chaos Scenarios as a Template](https://docs.litmuschaos.io/docs/user-guides/save-as-template)
+- [Litmus ChaosHub](https://hub.litmuschaos.io/)
 
 [Getting started tutorial]: ./../tutorial/getting_started.md
 [self-signed-certificates]: https://charmhub.io/self-signed-certificates
