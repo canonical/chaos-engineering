@@ -47,7 +47,7 @@ In this guide we will create an environment of type `Production` and we will cal
 
 Confirm your choices by clicking on the `Save` button.
 
-To bootstrap Chaos Infrastructure onto a Kubernetes cluster click on the newly created environment and then click
+To bootstrap a Chaos Infrastructure onto a Kubernetes cluster, select the newly created environment and then click on
 the `+ Enable Chaos` button.
 
 First, provide a name for the infrastructure. In this guide we will use `self-signed-certificates-test`:
