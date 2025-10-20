@@ -95,7 +95,7 @@ Select the probe of type `Command` and configure it using the values below:
 - Comparison Criteria: `>`
 - Value:               `0`
 
-Correctly configured probe should look as show below:
+A correctly configured probe should look like so:
 
 ```{image} ../images/litmus_probe_config.png
 :align: center
