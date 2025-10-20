@@ -132,7 +132,7 @@ Configure the fault with the following values:
 In the `Probes` tab select the previously created `pod-up-probe` and confirm your choice by clicking the `Add to Fault` button.
 Select the `End of Test (EOT)` probe execution mode and apply changes.
 
-At this point you experiment should look similar to the one presented below:
+At this point you experiment should look like this:
 
 ```{image} ../images/experiment_step_4.png
 :align: center
