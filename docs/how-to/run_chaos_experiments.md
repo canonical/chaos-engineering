@@ -45,7 +45,7 @@ In this guide we will create an environment of type `Production` and we will cal
 :align: center
 ```
 
-Confirm configuration by clicking the `Save` button.
+Confirm your choices by clicking on the `Save` button.
 
 To bootstrap Chaos Infrastructure onto a Kubernetes cluster click on the newly created environment and then click
 the `+ Enable Chaos` button.
