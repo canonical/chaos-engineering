@@ -19,3 +19,12 @@ lifecycle
 litmuschaos
 namespace
 snapd
+github
+https
+litmuschaos
+VM
+mongodb
+unencrypted
+juju
+teardown
+tls
