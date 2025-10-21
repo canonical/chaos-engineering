@@ -9,3 +9,12 @@ Traefik
 frictionless
 lifecycle
 snapd
+github
+https
+litmuschaos
+VM
+mongodb
+unencrypted
+juju
+teardown
+tls
