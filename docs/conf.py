@@ -64,6 +64,7 @@ if not 'ogp_image' in locals():
 ### General configuration
 ############################################################
 
+suppress_warnings = ["myst.header"]
 exclude_patterns = [
     '_build',
     'Thumbs.db',
