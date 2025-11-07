@@ -1,6 +1,6 @@
 # Reference
 
-This section provides detailed reference material for Charmed Chaos Engineering platform.
+This section provides detailed reference material for Canonical Chaos Engineering platform.
 
 ## Table of content
 

@@ -19,7 +19,7 @@ import datetime
 ############################################################
 
 # Product name
-project = 'Charmed Chaos Engineering'
+project = 'Canonical Chaos Engineering'
 author = 'Canonical Group Ltd'
 
 # The title you want to display for the documentation in the sidebar.

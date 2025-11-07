@@ -9,7 +9,7 @@ In this how-to we will use the [self-signed-certificates charm] to provide the n
 For production deployments, we strongly discourage using self-signed TLS certificates. Instead, we recommend to use certificates signed by a trusted CA and safely stored, for example using a [Vault charm](https://charmhub.io/vault). 
 ```
 
-## 1. Add self-signed-certificates to your Charmed Chaos Engineering platform Terraform module
+## 1. Add self-signed-certificates to your Canonical Chaos Engineering platform Terraform module
 
 ```{note}
 In this guide it is assumed that the Terraform module responsible for deploying the Charmed Litmus is named `charmed-litmus`.

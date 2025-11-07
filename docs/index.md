@@ -1,4 +1,4 @@
-# Charmed Chaos Engineering Platform
+# Canonical Chaos Engineering Platform
 
 ## In this documentation
 
@@ -10,7 +10,7 @@
 Tutorial
 ^^^
 
-**Start here**: a hands-on introduction to Charmed Chaos Engineering platform for new users
+**Start here**: a hands-on introduction to Canonical Chaos Engineering platform for new users
 ```
 
 ```{grid-item-card}
@@ -49,7 +49,7 @@ Explanation
 
 ## Project and community
 
-Charmed Chaos Engineering platform is a member of the Ubuntu family. It’s an open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
+Canonical Chaos Engineering platform is a member of the Ubuntu family. It’s an open source project that warmly welcomes community projects, contributions, suggestions, fixes and constructive feedback.
 
 - [Ubuntu Code of conduct](https://ubuntu.com/community/ethos/code-of-conduct)
 - [Open a bug](https://github.com/canonical/chaos-engineering/issues)

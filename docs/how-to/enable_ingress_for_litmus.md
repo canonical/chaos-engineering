@@ -7,7 +7,7 @@ In this how-to we will use the [Traefik Kubernetes Charmed Operator] as an ingre
 
 To complete this guide, your Kubernetes cluster will need a LoadBalancer with at least 1 available IP address.
 
-## 1. Add Traefik to your Charmed Chaos Engineering platform Terraform module
+## 1. Add Traefik to your Canonical Chaos Engineering platform Terraform module
 
 ```{note}
 In this guide it is assumed that the Terraform module responsible for deploying the Charmed Litmus is named `charmed-litmus`.

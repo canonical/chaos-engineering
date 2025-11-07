@@ -6,7 +6,7 @@ define a Resilience Probe and create and run the experiment.
 
 ### Pre-requisites:
 
-- The Charmed Chaos Engineering platform deployed on your Kubernetes cluster (see the [Getting started tutorial])
+- The Canonical Chaos Engineering platform deployed on your Kubernetes cluster (see the [Getting started tutorial])
 - kubectl 
 
 ## 1. Deploy System Under Test (SUT)

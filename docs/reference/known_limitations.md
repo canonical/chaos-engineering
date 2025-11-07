@@ -1,6 +1,6 @@
 # Known limitations
 
-Here we list the known limitations of the Charmed Chaos Engineering platform in its current state.
+Here we list the known limitations of the Canonical Chaos Engineering platform in its current state.
 
 These are wide-scoped missing features (or products) that we would like to work on eventually.
 
@@ -12,7 +12,7 @@ For a list of known issues, bugs and feature requests that are currently being w
 
 
 ## Chaos testing for machine clouds
-At the moment, the Charmed Chaos Engineering platform focuses on chaos-testing for k8s environments.
+At the moment, the Canonical Chaos Engineering platform focuses on chaos-testing for k8s environments.
 We are currently not looking into charmed VM cloud chaos testing; but that is definitely an interesting avenue for future development. Thoughts on the matter? Get in touch!
 
 ## Charmed Litmus execution plane

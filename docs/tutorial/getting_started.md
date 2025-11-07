@@ -1,6 +1,6 @@
 # Getting started
 
-In this tutorial, we will deploy and run the Charmed Chaos Engineering platform using Juju and Terraform.
+In this tutorial, we will deploy and run the Canonical Chaos Engineering platform using Juju and Terraform.
 
 To complete this tutorial, you will need a machine which meets the following requirements:
 
@@ -62,7 +62,7 @@ Install Terraform:
 sudo snap install terraform --classic
 ```
 
-## 4. Deploy the Charmed Chaos Engineering platform
+## 4. Deploy the Canonical Chaos Engineering platform
 
 On the host machine create a new directory called `terraform`:
 
@@ -203,7 +203,7 @@ immediately after the first login and log in again.
 ```
 
 Congratulations!<br>
-You have reached the end of this tutorial. For more information about the Charmed Chaos Engineering platform please see our other documents.
+You have reached the end of this tutorial. For more information about the Canonical Chaos Engineering platform please see our other documents.
 
 ## 6. Destroy the environment
 

@@ -1,6 +1,6 @@
 # Tutorial
 
-In these tutorials, we will deploy and run Charmed Chaos Engineering platform.
+In these tutorials, we will deploy and run the Canonical Chaos Engineering platform.
 
 These tutorials will introduce you to key concepts, tools, processes and
 operations, starting from your first installation to a cloud deployment.
@@ -15,7 +15,7 @@ product.
 The tutorials have been tested with a variety of users. We make every effort to
 keep them up-to-date and ensure that they are reliable, but if you encounter any
 problems, please get in touch, as we want to help you complete the tutorials and
-have a frictionless experience with Charmed Chaos Engineering.
+have a frictionless experience with the Canonical Chaos Engineering platform.
 
 ## Table of content
 

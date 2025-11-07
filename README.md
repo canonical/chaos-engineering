@@ -1,6 +1,6 @@
-# Charmed Chaos Engineering Platform
+# Canonical Chaos Engineering Platform
 
-This repository contains documentation for the Charmed Chaos Engineering Platform.
+This repository contains documentation for the Canonical Chaos Engineering Platform.
 
 The documentation in its official form is available at https://canonical-chaos-engineering.readthedocs-hosted.com/en/latest/.
 
@@ -11,7 +11,7 @@ in order to build confidence in the system's capability to withstand turbulent c
 It is achieved by the intentional and controlled causing of failures in the system to understand their impact 
 and find potential failure points. By doing so, engineers can proactively prevent outages and other disruptions.
 
-Charmed Chaos Engineering Platform is an opinionated set of tools facilitating environment for conducting, observing
+Canonical Chaos Engineering Platform is an opinionated set of tools facilitating environment for conducting, observing
 and analyzing output of Chaos engineering tests. The solution leverages [Juju] and a set of [Charmed Operators] 
 to provide the end user with a smooth and frictionless experience of deploying and managing the solution throughout 
 its entire lifecycle. 
