@@ -19,13 +19,13 @@ Update your solution Terraform module (here it's named `main.tf`):
 ```shell
 cat << EOF >> main.tf
 module "traefik" {
-  source  = "git::https://github.com/canonical/traefik-k8s-operator//terraform"
-  model   = juju_model.charmed-chaos.name
-  channel = "latest/stable"
+  source     = "git::https://github.com/canonical/traefik-k8s-operator//terraform"
+  model_uuid = juju_model.charmed-chaos.uuid
+  channel    = "latest/stable"
 }
 
 resource "juju_integration" "litmus-chaoscenter-traefik" {
-  model = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
 
   application {
     name     = module.charmed-litmus.chaoscenter_app_name
@@ -76,18 +76,22 @@ resource "juju_model" "charmed-chaos" {
 module "charmed-litmus" {
   source = "git::https://github.com/canonical/litmus-operators//terraform"
 
-  model      = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
   depends_on = [juju_model.charmed-chaos]
+  
+  litmus_channel = "dev/edge"
+  admin_password = var.admin_password
+  charm_password = var.charm_password
 }
 
 module "traefik" {
-  source  = "git::https://github.com/canonical/traefik-k8s-operator//terraform"
-  model   = juju_model.charmed-chaos.name
-  channel = "latest/stable"
+  source     = "git::https://github.com/canonical/traefik-k8s-operator//terraform"
+  model_uuid = juju_model.charmed-chaos.uuid
+  channel    = "latest/stable"
 }
 
 resource "juju_integration" "litmus-chaoscenter-traefik" {
-  model = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
 
   application {
     name     = module.charmed-litmus.chaoscenter_app_name
