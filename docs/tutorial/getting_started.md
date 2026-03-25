@@ -1,7 +1,7 @@
 # Getting started
 
 In this tutorial, we will get you started with using the Canonical Chaos Engineering platform.
-You will learn how to deploy the platform using Terraform and Juju, create Chaos infrastructure and conduct a simple 
+You will learn how to deploy the platform using Terraform and Juju, create a Chaos infrastructure and conduct a simple 
 Chaos Experiment simulating POD deletion to check if the System Under Test can recover from such fault.
 
 To complete this tutorial, you will need a machine which meets the following requirements:
