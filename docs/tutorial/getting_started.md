@@ -202,7 +202,7 @@ mongodb-k8s:upgrade-version-a  mongodb-k8s:upgrade-version-a        upgrade     
 
 ## 5. Deploy System Under Test (SUT)
 
-In this tutorial we will use the [self-signed-certificates] charm as a SUT.
+In this tutorial we will use the [self-signed-certificates] charm as a SUT (System-Under-Test).
 
 Create a new Terraform module for the SUT:
 
