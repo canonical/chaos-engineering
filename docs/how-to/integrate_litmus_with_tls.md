@@ -21,12 +21,12 @@ Update your solution Terraform module (in this example named `main.tf`):
 ```shell
 cat << EOF >> main.tf
 module "self-signed-certificates" {
-  source   = "git::https://github.com/canonical/self-signed-certificates-operator//terraform"
-  model    = juju_model.charmed-chaos.name
+  source     = "git::https://github.com/canonical/self-signed-certificates-operator//terraform"
+  model_uuid = juju_model.charmed-chaos.uuid
 }
 
 resource "juju_integration" "litmus-auth-tls" {
-  model = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
 
   application {
     name     = module.charmed-litmus.auth_app_name
@@ -40,7 +40,7 @@ resource "juju_integration" "litmus-auth-tls" {
 }
 
 resource "juju_integration" "litmus-backend-tls" {
-  model = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
 
   application {
     name     = module.charmed-litmus.backend_app_name
@@ -54,7 +54,7 @@ resource "juju_integration" "litmus-backend-tls" {
 }
 
 resource "juju_integration" "litmus-chaoscenter-tls" {
-  model = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
 
   application {
     name     = module.charmed-litmus.chaoscenter_app_name
@@ -103,17 +103,21 @@ resource "juju_model" "charmed-chaos" {
 module "charmed-litmus" {
   source = "git::https://github.com/canonical/litmus-operators//terraform"
 
-  model      = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
   depends_on = [juju_model.charmed-chaos]
+  
+  litmus_channel = "dev/edge"
+  admin_password = var.admin_password
+  charm_password = var.charm_password
 }
 
 module "self-signed-certificates" {
-  source   = "git::https://github.com/canonical/self-signed-certificates-operator//terraform"
-  model    = juju_model.charmed-chaos.name
+  source     = "git::https://github.com/canonical/self-signed-certificates-operator//terraform"
+  model_uuid = juju_model.charmed-chaos.uuid
 }
 
 resource "juju_integration" "litmus-auth-tls" {
-  model = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
 
   application {
     name     = module.charmed-litmus.auth_app_name
@@ -127,7 +131,7 @@ resource "juju_integration" "litmus-auth-tls" {
 }
 
 resource "juju_integration" "litmus-backend-tls" {
-  model = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
 
   application {
     name     = module.charmed-litmus.backend_app_name
@@ -141,7 +145,7 @@ resource "juju_integration" "litmus-backend-tls" {
 }
 
 resource "juju_integration" "litmus-chaoscenter-tls" {
-  model = juju_model.charmed-chaos.name
+  model_uuid = juju_model.charmed-chaos.uuid
 
   application {
     name     = module.charmed-litmus.chaoscenter_app_name
