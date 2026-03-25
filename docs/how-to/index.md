@@ -11,7 +11,6 @@ Day-1 operations cover the deployment and integration of Canonical Chaos Enginee
 
 integrate_litmus_with_tls
 enable_ingress_for_litmus
-run_chaos_experiments
 ```
 
 ## Day-2 operations
